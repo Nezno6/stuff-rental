@@ -4,7 +4,6 @@ package com.zenit.eventinfoservice.event;
 public class Event {
     private static Integer numberOfInstances = 1;
     Integer id;
-
     int year;
     MonthValue month;
     DescriptionValue description;
@@ -47,7 +46,7 @@ public class Event {
     public void setYear(int year) {
         this.year = year;
     }
-
+      
     @Override
     public String toString() {
         return "Event{" +

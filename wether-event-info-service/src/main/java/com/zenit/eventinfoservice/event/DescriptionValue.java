@@ -3,11 +3,11 @@ package com.zenit.eventinfoservice.event;
 import java.util.List;
 
 public class DescriptionValue {
+
     private String description;
     private int degree;
     private int airHumidity;
     private int windSpeed;
-
     private static List<DescriptionValue> descriptionList;
 
     DescriptionValue(String description, int degree, int airHumidity, int windSpeed) {
