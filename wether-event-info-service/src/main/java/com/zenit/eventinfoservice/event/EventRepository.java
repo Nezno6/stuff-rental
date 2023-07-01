@@ -1,9 +1,8 @@
 package com.zenit.eventinfoservice.event;
 
 import org.springframework.stereotype.Repository;
+
 import java.util.*;
-import java.util.List;
-import java.util.Random;
 
 @Repository
 public class EventRepository {
@@ -25,6 +24,7 @@ public class EventRepository {
 
         events = listOfEvents.stream()
                 .sorted((eventF,eventS) -> Integer.compare(eventS.getYear(),eventF.getYear())).toList();
+    }
 
     public int getRandomValueOfMonth() {
         return random.nextInt(1,13);
@@ -33,7 +33,7 @@ public class EventRepository {
     public int getRandomValueOfWeather() {
         return random.nextInt(1,11);
     }
-    
+
     public int getRandomValueOfYear() {
         return random.nextInt(1800,2025);
     }
